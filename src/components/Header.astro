@@ -3,11 +3,11 @@ import Logo from "./Logo.astro";
 ---
 
 <header
-    class="w-full h-12 bg-transparent flex justify-around items-center fixed text-2xl font-bold z-20"
->
+    class="w-full h-20 bg-gray-800 flex justify-around items-center sticky top-0 text-2xl font-bold z-50"
+    >
     <Logo />
-    <nav class="hidden md:block">
-        <ul class="flex gap-10 text-[#9b7702]">
+    <nav class="hidden md:block z-50">
+        <ul class="flex gap-10 text-[#D4AF37] text-3xl">
             <li><a href="/">Inicio</a></li>
             <li><a href="/Profesionales">Profesionales</a></li>
             <li><a href="/Nosotros">Nosotros</a></li>
@@ -17,7 +17,7 @@ import Logo from "./Logo.astro";
     <button
         title="menu Synergoed"
         name="button"
-        class="z-30 md:hidden mt-1 absolute right-7"
+        class="z-50 md:hidden mt-1 absolute right-7"
     >
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ import Logo from "./Logo.astro";
     <nav
         class="nav-mobile p-4 absolute right-0 rounded-b-lg w-[60vw] bg-white h-[60vh]"
     >
-        <ul class="grid place-items-center gap-10 text-[#9b7702]">
+        <ul class="grid place-items-center gap-10 text-[#9b7702] z-50">
             <li><a href="/">Inicio</a></li>
             <li><a href="/Profesionales">Profesionales</a></li>
             <li><a href="/Nosotros">Nosotros</a></li>

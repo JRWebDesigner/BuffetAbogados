@@ -28,18 +28,33 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	*{
-		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-family:'buffetAbogados', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 	body{
-		background-color: #e2e2e2;
+		font-weight: 500;
+		background-color: rgb(255, 255, 255);
+		line-height: 3rem;
+	}
+	@font-face {
+		font-family: 'buffetAbogados';
+		src: url('/fonts/Lora-Regular.ttf');
+	}
+	.blur-b {
+		mask-image: linear-gradient(#000000 80%, transparent);
+	}
+	.blur-l {
+		mask-image: linear-gradient(to left, #000000 80%, transparent);
 	}
 	h2{
 		color:#D4AF37;
 		font-weight: bold;
-		line-height: 2.8rem;
-		font-size: 3rem;
+		line-height: 2.3rem;
+		font-size: 2rem;
 	}
 	@media (min-width: 768px) {
+		h2{
+			font-size: 3rem;
+		}
 		p {
 			font-size: 1.5rem;
 		}

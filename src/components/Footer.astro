@@ -2,6 +2,36 @@
 import Logo from "./Logo.astro";
 ---
 
-<footer class="bg-black">
-    <Logo />
+<footer class="w-full grid sm:grid-cols-2 lg:grid-cols-3 bg-gray-900 text-white p-5 gap-10">
+    
+    <div class="grid gap-5 place-items-center">
+        <Logo />
+        <small>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quaerat in aperiam molestiae, ea alias facilis quis itaque mollitia vitae nemo eaque magni sint iure deserunt rerum. Iure reprehenderit culpa sed, quo hic doloribus, quia blanditiis aperiam maxime, ipsa eum.
+        </small>
+    </div>
+    <div class="">
+        <h4 class="text-center text-xl text-[#9b7702]">Direccion</h4>
+        <div class="grid place-items-center">
+            <span>
+                zona, calle, lugar 
+            </span>
+            <span>
+                +591 66666666
+            </span>
+            <span class="">
+                correodeejemplo.gmail.com
+            </span>
+        </div>
+    </div>  
+    <div class="grid place-items-center">
+        <div class="grid place-items-center text-center">
+            <span class="text-2xl text-[#9b7702]">Contactate</span>
+            <span class="text-xl font-bold " ><a href="">+591 66666666</a></span>
+        </div>
+        <small class="text-center w-full mt-10">
+            &#169 2024 (Nombre) 
+        </small>
+    </div>
+    
 </footer>
