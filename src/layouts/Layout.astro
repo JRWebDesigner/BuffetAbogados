@@ -20,7 +20,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main class="grid place-items-center">
 			<slot />
 		</main>
 		<Footer />
@@ -29,6 +29,7 @@ const { title } = Astro.props;
 <style is:global>
 	*{
 		font-family:'buffetAbogados', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		scroll-behavior: smooth;
 	}
 	body{
 		font-weight: 500;
@@ -39,6 +40,7 @@ const { title } = Astro.props;
 		font-family: 'buffetAbogados';
 		src: url('/fonts/Lora-Regular.ttf');
 	}
+	
 	.blur-b {
 		mask-image: linear-gradient(#000000 80%, transparent);
 	}
@@ -46,7 +48,7 @@ const { title } = Astro.props;
 		mask-image: linear-gradient(to left, #000000 80%, transparent);
 	}
 	h2{
-		color:#D4AF37;
+		color:#9b7702;
 		font-weight: bold;
 		line-height: 2.3rem;
 		font-size: 2rem;
