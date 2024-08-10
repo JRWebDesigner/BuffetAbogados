@@ -1,7 +1,10 @@
 ---
-import Logo from "./Logo.astro"
+import Logo from "./Logo.astro";
 ---
-<header class="w-full h-12 bg-transparent flex justify-around items-center fixed text-2xl font-bold z-20">
+
+<header
+    class="w-full h-12 bg-transparent flex justify-around items-center fixed text-2xl font-bold z-20"
+>
     <Logo />
     <nav class="hidden md:block">
         <ul class="flex gap-10 text-[#9b7702]">
@@ -11,33 +14,63 @@ import Logo from "./Logo.astro"
             <li><a href="/Contactos">Contactos</a></li>
         </ul>
     </nav>
-        <button title="menu Synergoed" name="button" class="z-30 md:hidden mt-1 absolute right-7">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="35"  height="35"  viewBox="0 0 24 24"  fill="none"  stroke="#9b7702"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-        </button>
-        <nav class="nav-mobile p-4 absolute right-0 rounded-b-lg w-[60vw] bg-white h-[60vh]">
-            <ul class="grid place-items-center gap-10 text-[#9b7702]">
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/Profesionales">Profesionales</a></li>
-                <li><a href="/Nosotros">Nosotros</a></li>
-                <li><a href="/Contactos">Contactos</a></li>
-            </ul>
-        </nav>
-
+    <button
+        title="menu Synergoed"
+        name="button"
+        class="z-30 md:hidden mt-1 absolute right-7"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#9b7702"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path
+                d="M4 18l16 0"></path></svg
+        >
+    </button>
+    <nav
+        class="nav-mobile p-4 absolute right-0 rounded-b-lg w-[60vw] bg-white h-[60vh]"
+    >
+        <ul class="grid place-items-center gap-10 text-[#9b7702]">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/Profesionales">Profesionales</a></li>
+            <li><a href="/Nosotros">Nosotros</a></li>
+            <li><a href="/Contactos">Contactos</a></li>
+        </ul>
+    </nav>
 </header>
 <style>
-    header{
+    header {
         backdrop-filter: blur(5px);
     }
-    .nav-mobile{
+    .nav-mobile {
         top: -1000%;
         transform: scaleY(0);
         opacity: 0;
-        transition: 1s top, 1s transform, 1.3s opacity;
+        transition:
+            1s top,
+            1s transform,
+            1.3s opacity;
         z-index: 0 !important;
     }
-    button:hover ~ .nav-mobile{
-        top:100%;
+    button:hover ~ .nav-mobile {
+        top: 100%;
         opacity: 100;
         transform: scaleY(100%);
-}
+    }
+    a{
+		transition: .5s all;
+	}
+	a:hover{
+		background-color: white;
+		color:#9b7702;
+        border-radius: 10px;
+	}
 </style>

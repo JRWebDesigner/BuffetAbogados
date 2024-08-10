@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="buffet de abogados">
 	<div
-		class="relative text-center text-3xl h-[76vh] grid place-items-center bg-[#000c18]"
+		class="relative text-center text-2xl md:text-3xl h-[76vh] grid place-items-center bg-[#000c18]"
 	>
 		<img
 			class="blur-b absolute object-cover w-full h-full opacity-45 z-0"
@@ -12,15 +12,22 @@ import Layout from "../layouts/Layout.astro";
 			alt=""
 		/>
 		<h1 class="z-10 text-[#D4AF37]">
-			<strong class="text-[#fff] text-6xl">Bienvenidos a (Nombre)</strong><br />
+			<strong class="text-[#fff] md:text-6xl text-[1.88rem]"
+				>Bienvenidos a (Nombre)</strong
+			><br />
 			su aliado legal en La Paz, Bolivia
 		</h1>
-		<button type="button" class="absolute bottom-14 bg-[#9b7702] rounded-lg p-2 text-[#f0f0f0] font-bold shadow-lg shadow-[#D4AF37]">
+		<button
+			type="button"
+			class="absolute bottom-14 bg-[#9b7702] rounded-lg p-2 text-[#f0f0f0] font-bold shadow-lg shadow-[#D4AF37] transition-colors"
+		>
 			Solicitar Consulta
 		</button>
 	</div>
-	<section class="relative px-[9vw] mt-10 grid gap-14 text-xl font-semibold">
-		<p>
+	<section
+		class="relative px-[10vw] md:px-[9vw] mt-10 grid gap-14 text-xl font-semibold"
+	>
+		<!-- <p>
 			Bienvenidos a (Nombre), su aliado legal en La Paz, Bolivia. Con
 			una trayectoria de excelencia y compromiso, nuestro bufete se dedica a
 			brindar asesoramiento legal integral y soluciones efectivas a individuos,
@@ -29,7 +36,7 @@ import Layout from "../layouts/Layout.astro";
 			proteger sus intereses y a ofrecerle un servicio personalizado, basado en
 			la ética y el profesionalismo.
 		</p>
-		<img class="blur-b absolute -z-10 w-[300px] md:w-[400px] right-6 opacity-40" src="./derecho.png" alt="dama de la justicia png">
+		<img class="blur-b absolute -z-10 w-[300px] md:w-[400px] top-32 right-6 opacity-30" src="./derecho.png" alt="dama de la justicia png">
 		<p>
 			En (Nombre), entendemos que cada caso es único, por lo que nos
 			esforzamos por ofrecer un enfoque adaptado a las necesidades específicas
@@ -39,35 +46,96 @@ import Layout from "../layouts/Layout.astro";
 			corazón de La Paz nos permite estar siempre accesibles para nuestros
 			clientes, garantizando una comunicación constante y una atención dedicada
 			para asegurar los mejores resultados posibles.
-		</p>
+		</p> -->
 		<section class="mt-24 grid gap-7">
-			<h2 class="text-[#D4AF37] font-bold text-5xl">Quiénes Somos</h2>
-			<div class="flex flex-wrap-reverse md:flex-nowrap items-center">
-			<div>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-					doloribus voluptatum adipisci enim omnis maxime perspiciatis nobis. Minima
-					animi sunt magni ipsa ab? Sint rerum nobis, eos nemo dolorem aliquam
-					corporis voluptatum dolorum mollitia distinctio consequuntur quae delectus
-					ipsum natus cupiditate voluptate ut recusandae velit. Aliquid mollitia
-					perspiciatis odio quae.
-				</p>
-				<br>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis pariatur iure nostrum ipsa nihil at similique accusantium quidem quis soluta voluptates odit, fugiat distinctio commodi delectus laboriosam officia est illum!
-				</p>
-			</div>
-			<img class="blur-l w-[400px]" src="./fondo1.jpg" alt="(Nombre) buffet de abogados">
+			<h2>Quiénes Somos</h2>
+			<div class="flex md:flex-nowrap items-center">
+				<div>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Laboriosam doloribus voluptatum adipisci enim
+						omnis maxime perspiciatis nobis. Minima animi sunt magni
+						ipsa ab? Sint rerum nobis, eos nemo dolorem aliquam
+						corporis voluptatum dolorum mollitia distinctio
+						consequuntur quae delectus ipsum natus cupiditate
+						voluptate ut recusandae velit. Aliquid mollitia
+						perspiciatis odio quae.
+					</p>
+					<br />
+					<img
+						class="blur-b absolute -z-10 w-[300px] md:w-[400px] top-32 right-6 opacity-35"
+						src="./derecho.png"
+						alt="dama de la justicia png"
+					/>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Blanditiis pariatur iure nostrum ipsa nihil at similique
+						accusantium quidem quis soluta voluptates odit, fugiat
+						distinctio commodi delectus laboriosam officia est
+						illum!nobis, eos nemo dolorem aliquam corporis
+						voluptatum dolorum mollitia distinctio consequuntur quae
+						delectus ipsum natus cupiditate voluptate ut recusandae
+						velit. Aliquid mollitia perspiciatis odio quae.
+					</p>
+				</div>
+				<img
+					class="blur-l w-[400px] hidden md:block"
+					src="./fondo1.jpg"
+					alt="(Nombre) buffet de abogados"
+				/>
 			</div>
 		</section>
+		<section class="mt-24 md:text-center">
+			<h2 class="m-3">Formación Académica de Nuestro Equipo</h2>
+			<section class="flex flex-wrap gap-7 justify-around items-center">
+				<img src="./logoUmsa.png" alt="" />
+				<img src="./logoUmsa.png" alt="" />
+				<img src="./logoUmsa.png" alt="" />
+				<img src="./logoUmsa.png" alt="" />
+				<img src="./logoUmsa.png" alt="" />
+			</section>
+		</section>
+	</section>
+</section>
+<section class="mt-24 md:text-center">
+	<h2 class="m-3">Nuestro Equipo de trabajo</h2>
+	<section class="flex flex-wrap gap-3 mt-8 m-2 justify-around">
+		<div class="retrato">
+			<img src="./retratoMuestra.jfif" alt="" />
+			<span>Nombre Apellido1 Apellido2</span>
+		</div>
+		<div class="retrato">
+			<img class="retrato-img" src="./retratoMuestra.jfif" alt="" />
+			<span>Nombre Apellido1 Apellido2</span>
+		</div>
+		<div class="retrato">
+			<img class="retrato-img" src="./retratoMuestra.jfif" alt="" />
+			<span>Nombre Apellido1 Apellido2</span>
+		</div>
+		<div class="retrato">
+			<img class="retrato-img" src="./retratoMuestra.jfif" alt="" />
+			<span>Nombre Apellido1 Apellido2</span>
+		</div>
 	</section>
 </Layout>
 <style>
+	.retrato{
+		width: 48%;
+	}
+	.retrato>img{
+		width: 100%;
+	}
 	.blur-b {
 		mask-image: linear-gradient(#000000 80%, transparent);
 	}
-	.blur-l{
+	.blur-l {
 		mask-image: linear-gradient(to left, #000000 80%, transparent);
 	}
-
+	button {
+		transition: 0.5s all;
+	}
+	button:hover {
+		background-color: white;
+		color: #9b7702;
+	}
 </style>
