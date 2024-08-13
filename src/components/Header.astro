@@ -3,9 +3,11 @@ import Logo from "./Logo.astro";
 ---
 
 <header
-    class="w-full h-20 bg-gray-800 flex justify-around items-center sticky top-0 text-2xl font-bold z-50"
+    class="w-full min-h-20 bg-gradient-to-l to-[#45460d] from-[#45460d] flex justify-around items-center sticky top-0 text-2xl font-bold z-50"
     >
-    <Logo />
+    <div class="w-[20%] md:w-[7%]">
+        <Logo />
+    </div>
     <nav class="hidden md:block z-50">
         <ul class="flex gap-10 text-[#D4AF37]">
             <li><a href="/">Inicio</a></li>
