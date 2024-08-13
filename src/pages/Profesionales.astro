@@ -5,7 +5,7 @@ import Present from "../components/Present.astro";
 
 <Layout title="Andres Baldivia - Profesionales">
     <Present title="NUESTROS PROFESIONALES" />
-    <div id="profesionals">
+    <div id="profesionals" class="text-[#8f1c1c]">
         
     </div>
     
@@ -25,22 +25,18 @@ import Present from "../components/Present.astro";
         </div>
         <div class="md:w-[50%]">
             <div>
-                <h2 class="text-[2rem] font-[700] text-[#2c3e50]">LIC. ${equipoP.nombre}</h2>
-                <small
+                <h2 class="text-[2rem] font-[700] text-[#461717]">LIC. ${equipoP.nombre}</h2>
+                <small class="text-blue-950"
                     >${equipoP.academico}</small
                 >
             </div>
             <div class="flex flex-wrap-reverse justify-around">
-                <p class="text-lg ">
+                <p class="text-lg text-black">
                     ${equipoP.descripcion}
                 </p>
             </div>
             <div class="grid place-items-center mt-5">
-                <button
-                    class="bg-[#9b7702] rounded-lg px-5 p-1 text-[#f0f0f0] font-bold shadow-lg shadow-[#D4AF37] transition-colors hover:text-[#9b7702] hover:bg-white"
-                >
-                    <a>${equipoP.numero}</a>
-                </button>
+                
             </div>
         </div>
     </section>    `
